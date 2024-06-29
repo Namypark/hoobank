@@ -8,7 +8,7 @@ export default function CTA() {
     >
       <div className={`flex flex-1 flex-col p-6`}>
         <h2 className={`${styles.heading2} `}>Let’s try our service now!</h2>
-        <p className={`${styles.paragraph} max-w-[445px] sm:mb-0 mt-5`}>
+        <p className={`${styles.paragraph} max-w-[470px] sm:mb-0 mt-5`}>
           Everything you need to accept card payments and grow your business
           anywhere on the planet.
         </p>
