@@ -6,18 +6,22 @@ export default function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className={"w-full py-6 flex  justify-between items-center navbar"}>
-      <div className="">
+    <nav
+      className={
+        "w-full py-6 flex  justify-between items-center navbar sm:px-16 px:6 xl:px-0"
+      }
+    >
+      <div className="mx-5">
         <img src={logo} alt="logo" className="w-[124px] h-[32px]" />
       </div>
-      <ul className="list-none sm:flex hidden justify-end items-center flex-1">
+      <ul className="list-none sm:flex hidden justify-end items-center flex-1 mx-2">
         {navLinks.map((nav, index) => (
           <li
             key={nav.id}
-            id={index + 1}
-            className={`font-poppins text-dimWhite font-normal cursor-pointer ${
+            id={nav.title}
+            className={`font-poppins  text-dimWhite font-normal cursor-pointer ${
               index === navLinks.length - 1 ? "mr-0" : "mr-10"
-            }  border-solid border-2 border-sky-500`}
+            }  b`}
           >
             <a
               href={`${nav.id}`}
@@ -51,7 +55,7 @@ export default function NavBar() {
               >
                 <a
                   href={`#`}
-                  className="transition ease-in delay-150 hover:text-white-100"
+                  className="transition ease-in delay-150 hover:text-white"
                 >
                   {nav.title}
                 </a>

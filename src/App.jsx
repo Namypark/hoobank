@@ -3,11 +3,9 @@ import {
   NavBar,
   Billing,
   Business,
-  Button,
   CardDeal,
   CTA,
   Footer,
-  GetStarted,
   Hero,
   Stats,
   Testimonial,
@@ -22,12 +20,12 @@ export default function App() {
         </div>
       </div>
       <div className={`bg-primary ${styles.paddingX} ${styles.flexStart}`}>
-        <div className={`text-center text-pink-200 ${styles.boxWidth} `}>
+        <div className={`text-center ${styles.boxWidth} `}>
           <Hero />
         </div>
       </div>
       <div className={`bg-primary ${styles.paddingX} ${styles.flexStart}`}>
-        <div className={`${styles.boxWidth} text-pink-200`}>
+        <div className={`${styles.boxWidth} `}>
           <Stats />
           <Business />
           <Billing />
